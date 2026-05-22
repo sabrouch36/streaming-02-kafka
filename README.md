@@ -415,3 +415,24 @@ It often figures it out and continues.
 | C02 | Consumer executed successfully!
 | C02 | ========================
 ```
+
+## Custom Modification
+
+A custom Kafka consumer named `kafka_consumer_sabri.py` was created from the original case consumer.
+
+### Modification Details
+
+The `consume_messages()` function was modified to improve runtime tracking and readability
+during Kafka message processing.
+
+The following customizations were added:
+
+- Added a `message_total` counter
+- Added clearer processing log sections
+- Added numbered message tracking output
+- Improved visibility while consuming streaming messages
+
+### Result
+
+The updated consumer now displays clearer runtime feedback while processing Kafka streaming
+ data and makes debugging easier during execution.

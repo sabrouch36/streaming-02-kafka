@@ -240,6 +240,9 @@ def consume_messages(consumer: Any) -> int:
         LOG.info("========================")
         LOG.info(f"Processing Message #{message_total}")
         LOG.info("========================")
+        sale_amount = float(row["unit_price"]) * int(row["quantity"])
+
+        LOG.info(f"Current Sale Amount: ${sale_amount:.2f}")
         processed = process_message(row)
 
         append_csv_row(

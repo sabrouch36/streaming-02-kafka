@@ -24,6 +24,9 @@ dependencies = [
     "duckdb", # WHY: In-memory database for testing and prototyping.
     "matplotlib", # WHY: Static plotting library for quick visualizations.
     "python-dotenv", # WHY: Load environment variables from .env files for configuration.
+    "shiny>=1.6.2",
+    "pandas>=3.0.3",
+    "shinywidgets>=0.8.1",
 ]
 
 [project.optional-dependencies]
